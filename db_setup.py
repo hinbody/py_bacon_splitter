@@ -1,12 +1,20 @@
-import mysql.connector as mydb
+import pymysql as mydb
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+db_user = config['Database']['user']
+db_password = config['Database']['password']
+db = config['Database']['database']
 
 #create a database, grant the appropriate privileges, then change the
 #information below to match
 
 db_config = {
-    'user': 'bacon',
-    'password': 'bacon',
-    'database': 'bacon'
+    'user': db_user,
+    'password': db_password,
+    'database': db
 }
 
 conn = mydb.connect(**db_config)
