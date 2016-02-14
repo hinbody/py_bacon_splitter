@@ -4,7 +4,7 @@ Helping to split the bacon you bring in
 
 ## Objects
 ### Creditor
-A person, organization, or company that money is owed to on a regular basis
+A person, organization, or company to which money is owed on a regular basis
 #### Attributes
 - Name
 - Phone number
